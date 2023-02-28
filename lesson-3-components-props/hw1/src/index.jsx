@@ -1,13 +1,15 @@
+import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import Greeting from './Greeting';
 
 const rootElement = document.querySelector('#root');
 
-<Greeting />;
-
 ReactDOM.render(
-  <Greeting firstName='Bob' lastName='Marley' birthDate='25' />,
+  <Greeting
+    firstName='Bob'
+    lastName='Marley'
+    birthDate={new Date(2007, 4, 25)}
+  />,
   rootElement
 );
